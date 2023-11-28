@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="135b9605-75ff-4826-961c-618abb934fa1" name="Changes" comment="멤버서비스 모듈 개발 &#10;- 멤버 저장&#10;- 멤버 한명 조회&#10;- 헥사고날 아키텍쳐에 입각한 개발">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/common/PersistenceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/dongdong/common/PersistenceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/common/SelfValidating.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/dongdong/common/SelfValidating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/common/UseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/dongdong/common/UseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/common/WebAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/dongdong/common/WebAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/adapter/in/web/FindMembershipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/adapter/in/web/FindMembershipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/adapter/in/web/RegisterMembershipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/adapter/in/web/RegisterMembershipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/adapter/out/persistence/MembershipPersistenceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/adapter/out/persistence/MembershipPersistenceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/application/port/in/RegisterMembershipCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/application/port/in/RegisterMembershipCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/application/port/out/RegisterMembershipPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/application/port/out/RegisterMembershipPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/application/service/FindMembershipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/application/service/FindMembershipService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/application/service/RegisterMembershipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/src/main/java/org/dongdong/membership/application/service/RegisterMembershipService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/membership-service/src/test/java/org/dongdong/membership/FindMembershipControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/membership-service/src/test/java/org/dongdong/membership/FindMembershipControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/membership-service">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MyFastcampusPay" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="AnnotationType" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Xiemlz2qUIZsDyTU2zpB8TY2dg" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-17&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15534739&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.11944443&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8f31a906bb5e7110f29968d235ca449c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.dongdong.membership.adapter.in.web" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.dongdong.membership.application.port.out" />
+      <recent name="org.dongdong.membership.application.port.in" />
+      <recent name="org.dongdong.membership.application.service" />
+      <recent name="org.dongdong.membership.adapter.in.web" />
+      <recent name="org.dongdong.membership" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle bootRun" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MembershipApplication">
+    <configuration name="MyFastcampusPay [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="MyFastcampusPay [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="FindMembershipControllerTest.testRegisterMembership" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyFastcampusPay.membership-service.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dongdong.membership.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.dongdong.membership" />
+      <option name="MAIN_CLASS_NAME" value="org.dongdong.membership.FindMembershipControllerTest" />
+      <option name="METHOD_NAME" value="testRegisterMembership" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModifyMembershipControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyFastcampusPay.membership-service.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dongdong.membership.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.dongdong.membership" />
+      <option name="MAIN_CLASS_NAME" value="org.dongdong.membership.ModifyMembershipControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModifyMembershipControllerTest.modifyMembershipControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyFastcampusPay.membership-service.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dongdong.membership.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.dongdong.membership" />
+      <option name="MAIN_CLASS_NAME" value="org.dongdong.membership.ModifyMembershipControllerTest" />
+      <option name="METHOD_NAME" value="modifyMembershipControllerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="MyFastcampusPay.common.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.dongdong.common.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MembershipApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="MyFastcampusPay.membership-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.dongdong.membership.MembershipApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MyFastcampusPay [bootRun]" />
+        <item itemvalue="Gradle.MyFastcampusPay [dependencies]" />
+        <item itemvalue="JUnit.ModifyMembershipControllerTest" />
+        <item itemvalue="JUnit.ModifyMembershipControllerTest.modifyMembershipControllerTest" />
+        <item itemvalue="JUnit.FindMembershipControllerTest.testRegisterMembership" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="135b9605-75ff-4826-961c-618abb934fa1" name="Changes" comment="" />
+      <created>1699116489775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699116489775</updated>
+      <workItem from="1699116490956" duration="2616000" />
+      <workItem from="1699280736018" duration="7445000" />
+      <workItem from="1699365255996" duration="10342000" />
+      <workItem from="1699543886336" duration="3039000" />
+      <workItem from="1699969521840" duration="1221000" />
+      <workItem from="1700318036266" duration="597000" />
+      <workItem from="1700492225123" duration="1244000" />
+      <workItem from="1700581019786" duration="1267000" />
+      <workItem from="1700582293342" duration="6289000" />
+      <workItem from="1700619721042" duration="4000000" />
+      <workItem from="1700665979613" duration="6206000" />
+      <workItem from="1700735255314" duration="4070000" />
+      <workItem from="1700838640313" duration="5503000" />
+      <workItem from="1700854990506" duration="1292000" />
+      <workItem from="1701096840394" duration="942000" />
+      <workItem from="1701183308411" duration="414000" />
+    </task>
+    <task id="LOCAL-00001" summary="멤버서비스 모듈 개발 &#10;- 멤버 저장&#10;- 멤버 한명 조회&#10;- 헥사고날 아키텍쳐에 입각한 개발">
+      <created>1700668895884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700668895884</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="멤버서비스 모듈 개발 &#10;- 멤버 저장&#10;- 멤버 한명 조회&#10;- 헥사고날 아키텍쳐에 입각한 개발" />
+    <option name="LAST_COMMIT_MESSAGE" value="멤버서비스 모듈 개발 &#10;- 멤버 저장&#10;- 멤버 한명 조회&#10;- 헥사고날 아키텍쳐에 입각한 개발" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package common;
+package org.dongdong.common;
 
 import javax.validation.*;
 import java.util.Set;

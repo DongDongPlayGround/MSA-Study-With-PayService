@@ -5,14 +5,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @EqualsAndHashCode(callSuper = true)
 @Builder
 @Data
-public class RegisterMembershipCommand extends SelfValidating<RegisterMembershipCommand> {
+public class ModifyMembershipCommand extends SelfValidating<ModifyMembershipCommand> {
+
+  @NotNull
+  private Long id;
 
   @NotNull
   private String name;
@@ -24,16 +26,17 @@ public class RegisterMembershipCommand extends SelfValidating<RegisterMembership
   @NotBlank
   private String email;
 
-  @AssertTrue
   private Boolean isValid; // 항상 true 라고 개발단에서부터 가정
 
   private Boolean isCorp;
 
-  public RegisterMembershipCommand(String name,
-                                   String address,
-                                   String email,
-                                   Boolean isValid,
-                                   Boolean isCorp) {
+  public ModifyMembershipCommand(Long id,
+                                 String name,
+                                 String address,
+                                 String email,
+                                 Boolean isValid,
+                                 Boolean isCorp) {
+    this.id = id;
     this.name = name;
     this.address = address;
     this.email = email;
