@@ -1,8 +1,7 @@
 package org.dongdong.membership.adapter.in.web;
 
-import common.WebAdapter;
+import org.dongdong.common.WebAdapter;
 import lombok.RequiredArgsConstructor;
-import org.dongdong.membership.application.port.in.FindMembershipUseCase;
 import org.dongdong.membership.application.port.in.RegisterMembershipCommand;
 import org.dongdong.membership.application.port.in.RegisterMembershipUseCase;
 import org.dongdong.membership.domain.Membership;

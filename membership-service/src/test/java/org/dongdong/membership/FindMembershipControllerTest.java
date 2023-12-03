@@ -26,6 +26,24 @@ public class FindMembershipControllerTest {
 
   @Test
   public void testRegisterMembership() throws Exception {
+    RegisterMembershipRequest request = new RegisterMembershipRequest(
+      "dongdong", "seoul, sungdonggu", "dongdong@gmail.com", true);
+
+    Membership expected = Membership.create(
+      new Membership.MembershipId(1L),
+      new Membership.MembershipName("dongdong"),
+      new Membership.MembershipEmail("dongdong@gmail.com"),
+      new Membership.MembershipAddress("seoul, sungdonggu"),
+      new Membership.MembershipIsValid(true),
+      new Membership.MembershipIsCorp(true)
+    );
+
+    mockMvc.perform(
+        MockMvcRequestBuilders.post("/membership/register")
+          .contentType(MediaType.APPLICATION_JSON)
+          .content(objectMapper.writeValueAsString(request))
+      ).andExpect(MockMvcResultMatchers.status().isOk())
+      .andExpect(MockMvcResultMatchers.content().string(objectMapper.writeValueAsString(expected)));
 
     Long id =1L;
     mockMvc.perform(

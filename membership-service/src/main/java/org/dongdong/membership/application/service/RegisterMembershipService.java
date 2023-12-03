@@ -1,6 +1,6 @@
 package org.dongdong.membership.application.service;
 
-import common.UseCase;
+import org.dongdong.common.UseCase;
 import lombok.RequiredArgsConstructor;
 import org.dongdong.membership.adapter.out.persistence.MembershipJpaEntity;
 import org.dongdong.membership.adapter.out.persistence.MembershipMapper;
